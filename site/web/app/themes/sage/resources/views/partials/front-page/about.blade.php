@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-md-6">
       <h2>Wie ben ik?</h2>
       <p>Ik ben een eenentwintig jarige developer met een net afgeronde Mediadevelopment studie aan het Mediacollege
         Amsterdam. Een paar jaar terug besloot dat ik dingen wou maken dat andere mensen zouden gebruiken en wou ik
@@ -10,7 +10,7 @@
         kennis verbreden door in de toekomst me te verdiepen in frameworks zoals Magento en React en talen zoals Python.
       </p>
     </div>
-    <div class="col">
+    <div class="col-md-6">
       <div class="card mb-3 shadow-sm" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-5">
