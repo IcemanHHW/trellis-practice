@@ -5,7 +5,7 @@
         <div class="card-header bg-transparent">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">Pure Face Art</p>
+            <p class="h4">{{ portfolio_titel_5() }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -17,12 +17,9 @@
             </div>
           </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/purefaceart.jpg" class="card-img-top" alt="Pure Face Art">
+        <img src="{{ portfolio_image_5() }}" class="card-img-top" alt="Pure Face Art">
         <div class="card-body">
-          <p class="card-text">WordPress site waar in een team van developers en vormgevers aan gewerkt is. Met
-            Bootstrap en <a href="https://www.advancedcustomfields.com/" target="_blank">ACF</a> is er een custom thema
-            voor de klant gemaakt, waardoor de klant zelf de content kan aanpassen. Ik ben bezig geweest in zowel de
-            front-end en back-end en heb me ook bezig gehouden met verschillende plugins en JS libaries. </p>
+          <p class="card-text">{{ portfolio_text_5() }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -41,7 +38,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">Afvallen met Nederland</p>
+              <p class="h4">{{ portfolio_titel_4() }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -50,11 +47,9 @@
             </div>
           </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/afvallenmetnederland.png" class="card-img-top" alt="Afvallen met Nederland">
+        <img src="{{ portfolio_image_4() }}" class="card-img-top" alt="Afvallen met Nederland">
         <div class="card-body">
-          <p class="card-text">WordPress site waar ik aan gewerkt heb tijdens de tweede stageperiode. Ik ben hier vooral
-            bezig geweest in de back-end. Ook is hier gebruik gemaakt van meerde plugins zoals WooCommerce. Meer
-            informatie is te vinden op m’n stageblog.</p>
+          <p class="card-text">{{ portfolio_text_4() }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -74,7 +69,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">Van Brug Software</p>
+              <p class="h4">{{ portfolio_titel_3() }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -82,9 +77,9 @@
             </div>
           </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/vanbrug.jpg" class="card-img-top" alt="Van Brug Software">
+        <img src="{{ portfolio_image_3() }}" class="card-img-top" alt="Van Brug Software">
         <div class="card-body">
-          <p class="card-text">Eén van de WordPress sites waar ik aan gewerkt heb tijdens m’n stage. Deze site is gemaakt met het thema Avada. Dit is alleen maar front-end. Er is ook gebruik gemaakt van Advanced Acces Manager voor de downloads per rol.</p>
+          <p class="card-text">{{ portfolio_text_3() }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row text-center">
@@ -98,7 +93,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">Ajax Curl Checker</p>
+              <p class="h4">{{ portfolio_titel_2() }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -108,9 +103,9 @@
             </div>
           </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/ajaxcurlchecker.png" class="card-img-top" alt="Ajax Curl Checker">
+        <img src="{{ portfolio_image_2() }}" class="card-img-top" alt="Ajax Curl Checker">
         <div class="card-body">
-          <p class="card-text">Een WordPress plugin gemaakt met een collega tijdens m’n stage. Na het invoeren van de postcode en huisnummer wordt de download en upload snelheid getoond. De plugin maakt gebruik van Curl commando’s en is in combinatie met jQuery code.</p>
+          <p class="card-text">{{ portfolio_text_2() }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -129,7 +124,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">Smart Post Data</p>
+              <p class="h4">{{ portfolio_titel_1() }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -138,9 +133,9 @@
             </div>
           </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/smartpostdata.png" class="card-img-top" alt="Smart Post Data Plugin">
+        <img src="{{ portfolio_image_1() }}" class="card-img-top" alt="Smart Post Data Plugin">
         <div class="card-body">
-          <p class="card-text">Een kleine WordPress plugin gemaakt tijdens m’n stage. Met deze plugin is het mogelijk om de titel en datum overal op de pagina te plaatsen. De plugin kan uitgebreid worden zodat bijvoorbeeld de auteur overal op de pagina geplaatst kan worden.</p>
+          <p class="card-text">{{ portfolio_text_1() }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">

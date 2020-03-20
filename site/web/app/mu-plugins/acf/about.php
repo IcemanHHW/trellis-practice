@@ -6,10 +6,14 @@
  * 
  */
 
- function about_text() {
-     return get_field('about_text');
- }
+ class ACF_About {
 
- function about_image() {
-     return get_field('about_image');
+    public function about_text() {
+        return get_field('about_text');
+    }
+   
+    public function about_image() {
+        return get_field('about_image');
+    }
+    
  }

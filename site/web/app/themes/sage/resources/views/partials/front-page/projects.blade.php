@@ -6,7 +6,7 @@
       <div class="card-header bg-transparent">
           <div class="row">
               <div class="col-md-auto">
-                <p class="h4">Pure Face Art</p>
+                <p class="h4">{{ hp_title_1() }}</p>
               </div>
               <div class="col">
                 <span class="badge badge-light">WordPress</span>
@@ -18,9 +18,9 @@
               </div>
           </div>
       </div>
-      <img src="https://kampmeijer.nl/wp-content/uploads/purefaceart.jpg" class="card-img-top" alt="Pure Face Art">
+      <img src="{{ hp_image_1() }}" class="card-img-top" alt="Pure Face Art">
       <div class="card-body">
-        <p class="card-text">WordPress site waar in een team van developers en vormgevers aan gewerkt is. Met Bootstrap en <a href="https://www.advancedcustomfields.com/" target="_blank">ACF</a> is er een custom thema voor de klant gemaakt, waardoor de klant zelf de content kan aanpassen. Ik ben bezig geweest in zowel de front-end en back-end en heb me ook bezig gehouden met verschillende plugins en JS libaries. </p>
+        <p class="card-text">{{ hp_text_1() }}</p>
       </div>
       <div class="card-footer bg-transparent">
           <div class="row">
@@ -37,7 +37,7 @@
         <div class="card-header bg-transparent pb-4">
             <div class="row">
                 <div class="col-md-auto">
-                  <p class="h4">Afvallen met Nederland</p>
+                  <p class="h4">{{ hp_title_2() }}</p>
                 </div>
                 <div class="col">
                   <span class="badge badge-light">WordPress</span>
@@ -46,9 +46,9 @@
                 </div>
             </div>
         </div>
-        <img src="https://kampmeijer.nl/wp-content/uploads/afvallenmetnederland.png" class="card-img-top" alt="Afvallen met Nederland">
+        <img src="{{ hp_image_2() }}" class="card-img-top" alt="Afvallen met Nederland">
         <div class="card-body">
-          <p class="card-text">WordPress site waar ik aan gewerkt heb tijdens de tweede stageperiode. Ik ben hier vooral bezig geweest in de back-end. Ook is hier gebruik gemaakt van meerde plugins zoals WooCommerce. Meer informatie is te vinden op m’n stageblog.</p>
+          <p class="card-text">{{ hp_text_2() }}</p>
         </div>
         <div class="card-footer bg-transparent">
             <div class="row">

@@ -6,6 +6,11 @@
  * 
  */
 
-function header_subtitle(){
-     return get_field('header_subtitle');
- }
+class ACF_General {
+
+    public function header_subtitle(){
+        return get_field('header_subtitle');
+    }
+}
+
+
