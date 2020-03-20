@@ -2,12 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <h2>Wie ben ik?</h2>
-      <p>Ik ben een eenentwintig jarige developer met een net afgeronde Mediadevelopment studie aan het Mediacollege
-        Amsterdam. Een paar jaar terug besloot dat ik dingen wou maken dat andere mensen zouden gebruiken en wou ik
-        programma's maken. Dit besluit is gegroeid naar het worden van Gamedeveloper en later het worden van Web
-        developer. Ik ben bezig in zowel de front-end als in de back-end. Ik vind het leuk om mooie websites te maken en
-        een design te volgen, maar ik heb ook interesse in de functionaliteit en veiligheid van een website. Ik wil me
-        kennis verbreden door in de toekomst me te verdiepen in frameworks zoals Magento en React en talen zoals Python.
+      <p> @php about_text() @endphp
       </p>
     </div>
     <div class="col-md-6">
