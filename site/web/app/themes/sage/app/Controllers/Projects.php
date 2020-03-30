@@ -4,34 +4,10 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class PortfolioAcf extends Controller
+class Projects extends Controller
 {
 
-public function hp_title_1() {
-    return get_field('hp_title_1');
-}
-
-public function hp_title_2() {
-   return get_field('hp_title_2');
-}
-
- public function hp_image_1() {
-    return get_field('hp_image_1');
-}
-
-public function hp_image_2() {
-   return get_field('hp_image_2');
-}
-
-public function hp_text_1() {
-    return get_field('hp_text_1');
-}
-
-public function hp_text_2() {
-   return get_field('hp_text_2');
-}
-
-
+ use Partials\Header;
 
  /* Images */
  public function portfolio_image_1() {
