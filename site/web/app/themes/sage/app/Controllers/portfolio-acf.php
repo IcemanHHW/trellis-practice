@@ -1,15 +1,13 @@
 <?php
-/**
- * Portfolio ACF fields
- * 
- * @author Maarten Kampmeijer
- * 
- */
 
-class ACF_Portfolio {
+namespace App\Controllers;
 
- /* Homepage */
- public function hp_title_1() {
+use Sober\Controller\Controller;
+
+class PortfolioAcf extends Controller
+{
+
+public function hp_title_1() {
     return get_field('hp_title_1');
 }
 
