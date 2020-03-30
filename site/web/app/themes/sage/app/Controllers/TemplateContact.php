@@ -4,9 +4,8 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class Contact extends Controller
+class TemplateContact extends Controller
 {
 
-    use Partials\Header;
     
 }

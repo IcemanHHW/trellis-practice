@@ -43,4 +43,10 @@ public function primarymenu() {
     );
     return $args;
   }
+
+  public function header_subtitle(){
+    return get_field('header_subtitle');
 }
+}
+
+

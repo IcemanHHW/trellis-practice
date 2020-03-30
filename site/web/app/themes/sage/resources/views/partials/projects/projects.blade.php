@@ -5,7 +5,7 @@
         <div class="card-header bg-transparent">
           <div class="row">
             <div class="col-md-auto">
-            <p class="h4">{{ portfolio_titel_5() }}</p>
+            <p class="h4">{{ $portfolio_title_5 }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -17,9 +17,9 @@
             </div>
           </div>
         </div>
-        <img src="{{ portfolio_image_5() }}" class="card-img-top" alt="Pure Face Art">
+        <img src="{{ $portfolio_image_5 }}" class="card-img-top" alt="Pure Face Art">
         <div class="card-body">
-          <p class="card-text">{{ portfolio_text_5() }}</p>
+          <p class="card-text">{{ $portfolio_text_5 }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -38,7 +38,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">{{ portfolio_titel_4() }}</p>
+              <p class="h4">{{ $portfolio_title_4 }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -47,9 +47,9 @@
             </div>
           </div>
         </div>
-        <img src="{{ portfolio_image_4() }}" class="card-img-top" alt="Afvallen met Nederland">
+        <img src="{{ $portfolio_image_4 }}" class="card-img-top" alt="Afvallen met Nederland">
         <div class="card-body">
-          <p class="card-text">{{ portfolio_text_4() }}</p>
+          <p class="card-text">{{ $portfolio_text_4 }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -69,7 +69,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">{{ portfolio_titel_3() }}</p>
+              <p class="h4">{{ $portfolio_title_3 }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -77,9 +77,9 @@
             </div>
           </div>
         </div>
-        <img src="{{ portfolio_image_3() }}" class="card-img-top" alt="Van Brug Software">
+        <img src="{{ $portfolio_image_3 }}" class="card-img-top" alt="Van Brug Software">
         <div class="card-body">
-          <p class="card-text">{{ portfolio_text_3() }}</p>
+          <p class="card-text">{{ $portfolio_text_3 }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row text-center">
@@ -93,7 +93,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">{{ portfolio_titel_2() }}</p>
+              <p class="h4">{{ $portfolio_title_2 }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -103,9 +103,9 @@
             </div>
           </div>
         </div>
-        <img src="{{ portfolio_image_2() }}" class="card-img-top" alt="Ajax Curl Checker">
+        <img src="{{ $portfolio_image_2 }}" class="card-img-top" alt="Ajax Curl Checker">
         <div class="card-body">
-          <p class="card-text">{{ portfolio_text_2() }}</p>
+          <p class="card-text">{{ $portfolio_text_2 }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">
@@ -124,7 +124,7 @@
         <div class="card-header bg-transparent pb-4">
           <div class="row">
             <div class="col-md-auto">
-              <p class="h4">{{ portfolio_titel_1() }}</p>
+              <p class="h4">{{ $portfolio_title_1 }}</p>
             </div>
             <div class="col">
               <span class="badge badge-light">WordPress</span>
@@ -133,9 +133,9 @@
             </div>
           </div>
         </div>
-        <img src="{{ portfolio_image_1() }}" class="card-img-top" alt="Smart Post Data Plugin">
+        <img src="{{ $portfolio_image_1 }}" class="card-img-top" alt="Smart Post Data Plugin">
         <div class="card-body">
-          <p class="card-text">{{ portfolio_text_1() }}</p>
+          <p class="card-text">{{ $portfolio_text_1 }}</p>
         </div>
         <div class="card-footer bg-transparent">
           <div class="row">

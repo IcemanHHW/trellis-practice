@@ -4,10 +4,9 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class Projects extends Controller
+class TemplateProjects extends Controller
 {
 
- use Partials\Header;
 
  /* Images */
  public function portfolio_image_1() {

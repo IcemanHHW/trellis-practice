@@ -7,8 +7,6 @@ use Sober\Controller\Controller;
 class FrontPage extends Controller
 {
 
-    use Partials\Header;
-
     public function about_text() {
         return get_field('about_text');
     }
