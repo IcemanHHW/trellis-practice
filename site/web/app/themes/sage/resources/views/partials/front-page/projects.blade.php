@@ -5,7 +5,7 @@ $args = array(
 'posts_per_page' => 2,
 );
 
-$post_tags = get_the_tags();
+$post_tags = get_terms('post_tag');
 
 $loop = new WP_Query( $args );
 
@@ -15,7 +15,7 @@ $loop = new WP_Query( $args );
   <p class="h5">M'n laatste projecten</p>
   <div class="card-deck mt-3">
     @while ( $loop->have_posts() )
-    @php $loop->the_post(); @endphp
+    @php( $loop->the_post() )
       <div class="card shadow-sm">
         <div class="card-header bg-transparent">
           <div class="row">
@@ -23,11 +23,9 @@ $loop = new WP_Query( $args );
               <p class="h4"><?= the_title(); ?></p>
             </div>
             <div class="col">
-                @if ( $post_tags )
-                  @foreach( $post_tags as $tag )
+                @foreach( $post_tags as $tag )
                    <span class="badge badge-light"><?= $tag->name; ?></span> 
-                  @endforeach
-                @endif
+                @endforeach
             </div>
           </div>
         </div>
@@ -41,9 +39,7 @@ $loop = new WP_Query( $args );
           <a href="<?php the_permalink(); ?>" class="card-link">Lees meer</a>
         </div>
       </div>
-     @endwhile;
-    @php
-      wp_reset_postdata();
-    @endphp
+     @endwhile
+    @php( wp_reset_postdata() )
   </div>
 </div>
