@@ -6,7 +6,7 @@
       <div class="card-header bg-transparent">
           <div class="row">
               <div class="col-md-auto">
-                <p class="h4">{{ $hp_title_1 }}</p>
+                <p class="h4"><?= $hp_title_1 ?></p>
               </div>
               <div class="col">
                 <span class="badge badge-light">WordPress</span>
@@ -18,9 +18,9 @@
               </div>
           </div>
       </div>
-      <img src="{{ $hp_image_1 }}" class="card-img-top" alt="Pure Face Art">
+      <img src="<?= $hp_image_1 ?>" class="card-img-top" alt="Pure Face Art">
       <div class="card-body">
-        <p class="card-text">{{ $hp_text_1 }}</p>
+        <p class="card-text"><?= $hp_text_1 ?></p>
       </div>
       <div class="card-footer bg-transparent">
           <div class="row">
@@ -37,7 +37,7 @@
         <div class="card-header bg-transparent pb-4">
             <div class="row">
                 <div class="col-md-auto">
-                  <p class="h4">{{ $hp_title_2 }}</p>
+                  <p class="h4"><?= $hp_title_2 ?></p>
                 </div>
                 <div class="col">
                   <span class="badge badge-light">WordPress</span>
@@ -46,9 +46,9 @@
                 </div>
             </div>
         </div>
-        <img src="{{ $hp_image_2 }}" class="card-img-top" alt="Afvallen met Nederland">
+        <img src="<?= $hp_image_2 ?>" class="card-img-top" alt="Afvallen met Nederland">
         <div class="card-body">
-          <p class="card-text">{{ $hp_text_2 }}</p>
+          <p class="card-text"><?= $hp_text_2 ?></p>
         </div>
         <div class="card-footer bg-transparent">
             <div class="row">

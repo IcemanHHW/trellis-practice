@@ -2,13 +2,13 @@
   <div class="row">
     <div class="col-md-6">
       <h2>Wie ben ik?</h2>
-      <p>{{ $about_text }}</p>
+      <p><?= $about_text ?></p>
     </div>
     <div class="col-md-6">
       <div class="card mb-3 shadow-sm" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-5">
-            <img class="card-img" src="{{ $about_image }}" alt="Maarten Kampmeijer">
+            <img class="card-img" src="<?= $about_image ?>" alt="Maarten Kampmeijer">
           </div>
           <div class="col-md-7">
             <div class="card-body">
