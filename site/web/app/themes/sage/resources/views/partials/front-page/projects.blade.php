@@ -14,7 +14,8 @@ $loop = new WP_Query( $args );
   <h2>Portfolio</h2>
   <p class="h5">M'n laatste projecten</p>
   <div class="card-deck mt-3">
-    <?= while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    @while ( $loop->have_posts() )
+    @php $loop->the_post(); @endphp
       <div class="card shadow-sm">
         <div class="card-header bg-transparent">
           <div class="row">
@@ -22,25 +23,17 @@ $loop = new WP_Query( $args );
               <p class="h4"><?= the_title(); ?></p>
             </div>
             <div class="col">
-              @php
-
-                if ( $post_tags ):
-                  foreach( $post_tags as $tag ):
-
-                  @endphp
+                @if ( $post_tags )
+                  @foreach( $post_tags as $tag )
                    <span class="badge badge-light"><?= $tag->name; ?></span> 
-                  @php
-
-                  endforeach
-                endif
-
-              @endphp
+                  @endforeach
+                @endif
             </div>
           </div>
         </div>
-        <?= if( has_post_thumbnail() ): ?>
+        @if( has_post_thumbnail() )
           <img src="<?= the_post_thumbnail_url(); ?>" class="card-img-top" alt="<?= the_title(); ?>">
-        <?= endif;?>
+         @endif
         <div class="card-body">
           <p class="card-text"><?= the_excerpt(); ?></p>
         </div>
@@ -48,9 +41,8 @@ $loop = new WP_Query( $args );
           <a href="<?php the_permalink(); ?>" class="card-link">Lees meer</a>
         </div>
       </div>
+     @endwhile;
     @php
-      endwhile;
-
       wp_reset_postdata();
     @endphp
   </div>
