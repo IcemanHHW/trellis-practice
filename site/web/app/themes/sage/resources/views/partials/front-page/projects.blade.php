@@ -1,14 +1,10 @@
 @php
-
 $args = array(
 'post_type' => 'post',
 'posts_per_page' => 2,
 );
 
-$post_tags = get_terms('post_tag');
-
 $loop = new WP_Query( $args );
-
 @endphp
 <div class="container">
   <h2>Portfolio</h2>
@@ -23,9 +19,12 @@ $loop = new WP_Query( $args );
               <p class="h4"><?= the_title(); ?></p>
             </div>
             <div class="col">
-                @foreach( $post_tags as $tag )
-                   <span class="badge badge-light"><?= $tag->name; ?></span> 
-                @endforeach
+              <?= $post_tags = get_the_tags(); ?>
+              @if( $post_tags )
+                  @foreach( $post_tags as $tag )
+                   <span class="badge badge-light"><?= echo $tag->name; ?></span> 
+                  @endforeach
+              @endif
             </div>
           </div>
         </div>
