@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Sober\Controller\Controller;
+use WP_Query;
 
 class FrontPage extends Controller
 {
@@ -14,28 +15,14 @@ class FrontPage extends Controller
     public function about_image() {
         return get_field('about_image');
     }
+    
+    public function hp_projects() {
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 2,
+            );       
+        $hp_query = new WP_Query( $args );
+        return $hp_query;
+    }
 
-    public function hp_title_1() {
-        return get_field('hp_title_1');
-    }
-    
-    public function hp_title_2() {
-       return get_field('hp_title_2');
-    }
-    
-     public function hp_image_1() {
-        return get_field('hp_image_1');
-    }
-    
-    public function hp_image_2() {
-       return get_field('hp_image_2');
-    }
-    
-    public function hp_text_1() {
-        return get_field('hp_text_1');
-    }
-    
-    public function hp_text_2() {
-       return get_field('hp_text_2');
-    }
 }

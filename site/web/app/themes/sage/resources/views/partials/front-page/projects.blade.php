@@ -1,17 +1,9 @@
-@php
-$args = array(
-'post_type' => 'post',
-'posts_per_page' => 2,
-);
-
-$loop = new WP_Query( $args );
-@endphp
 <div class="container">
   <h2>Portfolio</h2>
   <p class="h5">M'n laatste projecten</p>
   <div class="card-deck mt-3">
-    @while ( $loop->have_posts() )
-    @php( $loop->the_post() )
+    @while ( $hp_projects->have_posts() )
+    @php( $hp_projects->the_post() )
       <div class="card shadow-sm">
         <div class="card-header bg-transparent">
           <div class="row">
@@ -19,10 +11,10 @@ $loop = new WP_Query( $args );
               <p class="h4"><?= the_title(); ?></p>
             </div>
             <div class="col">
-              <?= $post_tags = get_the_tags(); ?>
+              @php( $post_tags = get_the_tags() )
               @if( $post_tags )
                   @foreach( $post_tags as $tag )
-                   <span class="badge badge-light"><?= echo $tag->name; ?></span> 
+                   <span class="badge badge-light">{{ $tag->name }}</span> 
                   @endforeach
               @endif
             </div>

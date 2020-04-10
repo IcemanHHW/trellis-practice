@@ -1,13 +1,13 @@
 <article @php post_class() @endphp>
-  <header>
-    <h1 class="entry-title">{!! get_the_title() !!}</h1>
-    @include('partials/entry-meta')
-  </header>
-  <div class="entry-content">
+<div class="jumbotron jumbotron-fluid bg-primary text-white">
+  <div class="container">
+    <h1 class="display-3">{!! get_the_title() !!}</h1>
+  </div>
+</div>
+  <div class="container">
+    @if( has_post_thumbnail() )
+      <img src="<?= the_post_thumbnail_url(); ?>" class="img-fluid mb-3" alt="<?= the_title(); ?>">
+    @endif
     @php the_content() @endphp
   </div>
-  <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-  </footer>
-  @php comments_template('/partials/comments.blade.php') @endphp
 </article>
